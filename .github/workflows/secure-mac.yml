@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   build:
+    name: Build
     runs-on: macos-latest
     steps:
     - name: checkout repo and submodules
@@ -12,3 +13,17 @@ jobs:
           submodules: recursive
     - name: build application
       run: make build
+    - name: make release
+      run: make release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          Changes in this Release
+          - Bug fixes
+          - New features
+        draft: false
+        prerelease: false
