@@ -2,7 +2,7 @@
 CXX = g++
 
 # Compiler flags
-CXXFLAGS = -std=c++11
+CXXFLAGS = -std=c++11 -Wall -Ilibs/Logger
 
 # Output directory for binaries
 BIN_DIR = bin
