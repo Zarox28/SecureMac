@@ -6,7 +6,7 @@
 
 SecureMac is a simple `C++` program that locks the screen and starts a recording with the webcam when it detects a movement.
 
-> Version: **1.1.0**
+> Version: **1.1.1**
 
 ---
 
@@ -52,7 +52,13 @@ And guess what? It's open-source, so you can use it for free [here](https://gith
 git clone https://Zarox28/SecureMac.git
 ```
 
-2. Compile the source code
+2. Add the `Logger` submodule
+
+```bash
+git submodule update --init --recursive
+```
+
+3. Compile the source code
 
 ```bash
 make build
