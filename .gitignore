@@ -1,6 +1,7 @@
 .clang-format
 .DS_Store
 /video
+/bin
 
 # Prerequisites
 *.d
