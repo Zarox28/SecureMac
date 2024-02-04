@@ -78,7 +78,7 @@ When you run the program, it does the following things:
 1. Locks the screen
 2. Waits for a movement
 3. If it detects a movement, it starts a recording with the webcam
-4. To stop the recording and the program, you have to enter `Ctrl + C`
+4. To stop the recording and the program, you have to enter `Ctrl + C` shortcut in the terminal
 
 ## Changelog 📆
 
