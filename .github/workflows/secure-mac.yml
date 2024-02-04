@@ -1,12 +1,14 @@
 name: secure-mac
 
 on: [push]
-  
+
 jobs:
   build:
     runs-on: macos-latest
     steps:
-    - name: checkout repo
+    - name: checkout repo and submodules
       uses: actions/checkout@main
+      with:
+          submodules: recursive
     - name: build application
       run: make build

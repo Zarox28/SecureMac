@@ -7,7 +7,7 @@
  */
 
 // ----- INCLUDES -----
-#include "Logger/logger.h"
+#include "../libs/Logger/logger.cpp"
 
 #include <Carbon/Carbon.h>
 #include <CoreFoundation/CoreFoundation.h>
