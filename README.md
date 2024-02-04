@@ -6,7 +6,7 @@
 
 SecureMac is a simple `C++` program that locks the screen and starts a recording with the webcam when it detects a movement.
 
-> Version: **1.0.0**
+> Version: **1.1.0**
 
 ---
 
@@ -55,7 +55,7 @@ git clone https://Zarox28/SecureMac.git
 2. Compile the source code
 
 ```bash
-make
+make build
 ```
 
 ## Usage ▶️
@@ -88,9 +88,11 @@ see [CHANGELOG.md](CHANGELOG.md) for latest changes.
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **appreciated**, whether it's a simple opinion or a pull request.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature`)
-3. Commit your changes (`git commit -am 'Add feature'`)
+3. Commit your changes (`git commit -m 'Add feature'`)
 4. Push to the branch (`git push origin feature`)
 5. Create a new Pull Request
 

@@ -28,7 +28,11 @@ INC_FILES = $(wildcard $(INC_DIR)/*.h)
 # Command line arguments
 ARGS =
 
-all: clean $(EXEC)
+# Default target
+all: clean build
+
+# Build target
+build: $(EXEC)
 
 # Compile
 $(EXEC): $(SRC_FILES) $(INC_FILES)
@@ -47,8 +51,7 @@ run_debug: run
 # Clean up
 clean:
 	@rm -rf $(BIN_DIR)
-	@rm -rf video
 	@echo "\033[0;32mCleaned up!"
 
 # Phony targets
-.PHONY: all run run_debug clean
+.PHONY: all build run run_debug clean
