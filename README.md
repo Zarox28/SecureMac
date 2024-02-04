@@ -82,13 +82,13 @@ When you run the program, it does the following things:
 
 ## Changelog 📆
 
-see [CHANGELOG.md](CHANGELOG.md) for latest changes.
+see [CHANGELOG](CHANGELOG.md) for latest changes.
 
 ## Contributing 🤝
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **appreciated**, whether it's a simple opinion or a pull request.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+See [CONTRIBUTING](CONTRIBUTING.md) for more information.
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature`)
