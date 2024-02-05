@@ -191,7 +191,7 @@ void setupKeyboardEventTap()
 int main(int argc, char *argv[])
 {
   printf("\033]2;%s\007", "SecureMac");  // Set terminal title
-  printf("\033[2J\033[H");               // Clear terminal
+  init();                                // Initialize terminal
 
   info("Starting...");
 
