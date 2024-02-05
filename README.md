@@ -6,7 +6,7 @@
 
 SecureMac is a simple `C++` program that locks the screen and starts a recording with the webcam when it detects a movement.
 
-> Version: **1.1.1**
+> Version: **1.1.2**
 
 ---
 
