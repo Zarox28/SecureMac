@@ -13,6 +13,18 @@ SRC_DIR = src
 # Include directory
 INC_DIR = include
 
+# Libs directory
+LIBS_DIR = libs
+
+# Logger directory
+LOGGER_DIR = $(LIBS_DIR)/Logger
+
+# Logger source files
+LOGGER_SRC_FILE = $(LOGGER_DIR)/logger.cpp
+
+# Logger include files
+LOGGER_INC_FILE = $(LOGGER_DIR)/logger.h
+
 # Executable
 EXEC = $(BIN_DIR)/SecureMac
 
@@ -35,9 +47,9 @@ all: clean build
 build: $(EXEC)
 
 # Compile
-$(EXEC): $(SRC_FILES) $(INC_FILES)
+$(EXEC): $(SRC_FILES) $(INC_FILES) $(LOGGER_SRC_FILE) $(LOGGER_INC_FILE)
 	@mkdir -p $(BIN_DIR)
-	@$(CXX) $(CXXFLAGS) -I$(INC_DIR) -o $@ $(SRC_FILES) $(LIBS)
+	@$(CXX) $(CXXFLAGS) -I$(INC_DIR) -I$(LOGGER_INC_FILE) -o $@ $(SRC_FILES) $(LIBS) $(LOGGER_SRC_FILE)
 	@echo "\033[0;32mCompiled successfully!"
 
 # Run the program

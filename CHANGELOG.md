@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3] - 2024-02-07
+
+### fixed
+
+- Fixed `Logger` implementation in `MakeFile`
+- Fixed video removal
+
 ## [1.1.2] - 2024-02-05
 
 ### Changed
