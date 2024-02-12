@@ -41,15 +41,15 @@ void startRecording()
 
   string directory = "video";
 
+  // Delete video folder if it exists
+  string deleteDirCommand = "rm -rf ../" + directory;
+
   // Create directory if it doesn't exist
   if (access(directory.c_str(), F_OK) == -1)
   {
     string createDirCommand = "mkdir -p " + directory;
     system(createDirCommand.c_str());
   }
-
-  // Delete video folder if it exists
-  string deleteDirCommand = "rm -rf " + directory + "/*";
 
   string command = "ffmpeg -f avfoundation -framerate 30 -i \"0\" -vf \"format=yuv420p\" "
                  + directory + "/" + buffer + ".mp4 > /dev/null 2>&1 &";

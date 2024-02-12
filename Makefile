@@ -63,6 +63,7 @@ run_debug: run
 # Clean up
 clean:
 	@rm -rf $(BIN_DIR)
+	@rm -rf video/
 	@echo "\033[0;32mCleaned up!"
 
 # Phony targets
